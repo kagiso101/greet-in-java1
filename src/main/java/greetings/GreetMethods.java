@@ -26,20 +26,21 @@ public class GreetMethods{
 
 
     //greets the user by taking in the greet command followed by the name and language to be greeted in
-    public void greetUser( String name, String lang) {
+    public String greetUser( String name, String lang) {
         addUser(name);
             switch (lang) {//if language
                 case "english"://in the case of english
-                    System.out.println("Hello, " + name);//print hello & name entered
-                    break;
+                    System.out.println("Hello, " + name);
+                   return  "Hello, " + name;//print hello & name entered
                 case "spanish"://case of spanish
                     System.out.println("Hola, " + name);
-                    break;
+                    return  "Hola, " + name;
                 case "french"://case of french
                     System.out.println("Bonjour, " + name);
-                    break;
+                  return "Bonjour, " + name;
                 default:
                     System.out.println("Hi, " + name);
+                 return "Hi, " + name;
             }
         }
 
