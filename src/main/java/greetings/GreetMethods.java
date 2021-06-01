@@ -7,9 +7,9 @@ public class GreetMethods{
 
 
     //list to store all names that are added(!does not take duplicates)
-    protected List<String> list = new ArrayList<String>();
-    //list to store all names that are added(!does not take duplicates)
-    protected List<String> list2 = new ArrayList<String>();
+    protected List<String> list = new ArrayList<>();
+    //list to store all names that are added(does take duplicates)
+    protected List<String> list2 = new ArrayList<>();
     //counter that increments each time a user is added
     protected int counter;
 
@@ -190,6 +190,7 @@ public class GreetMethods{
                     greet.help();
             }
         }
+        scanner.close();
 
     }
 
